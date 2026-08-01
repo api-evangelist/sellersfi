@@ -1,8 +1,24 @@
 aid: sellersfi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sellersfi.png
 name: Sellersfi
-description: 'Sellersfi is a company surfaced as a portfolio company of northzone and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'SellersFi is a financial technology company providing working capital
+  and inventory financing to e-commerce merchants, including sellers on Amazon and
+  direct-to-consumer channels. It offers flexible funding lines with approvals in
+  as fast as 48 hours, helping online businesses manage cash flow, purchase inventory,
+  and scale operations. Backed by Northzone, SellersFi operates a lending platform
+  and applicant portal rather than a public developer API; this profile captures its
+  identity and domain-security posture for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/sellersfi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Financial Services
+- Lending
+- Working Capital
+- Inventory Financing
+- E-Commerce
+- Embedded Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sellersfi-domain-security.yml
 - type: Website
   url: https://sellersfi.com
+- type: Blog
+  url: https://sellersfi.com/resources/blog/
+- type: Support
+  url: https://sellersfi.com/contact-us/
+- type: SignUp
+  url: https://app-new.sellersfi.com/apply
+- type: Login
+  url: https://app-new.sellersfi.com/portal/login
+- type: TermsOfService
+  url: https://sellersfi.com/terms/terms-of-use.pdf
+- type: PrivacyPolicy
+  url: https://sellersfi.com/terms/privacy-policy.pdf
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
